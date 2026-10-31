@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#FF7A00">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="لقطة">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" href="icon-192.png">
+<script src="pwa.js" defer></script>
+<script src="config.js"></script>
+<script src="data.js"></script>
+<title>سماعات أذن لاسلكية بلوتوث 5.3 | لقطة LOQTA</title>
+<meta name="description" content="سماعات أذن لاسلكية بلوتوث 5.3 أسود IPX5 بخصم 50% من لقطة. الدفع عند الاستلام وتوصيل لكل مصر.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;500;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<style>
+:root{--navy:#0D4F8B;--orange:#FF7A00;--ink:#0A2540;--bg:#F2F6FA;--card:#fff;--line:#DCE5EE;--mute:#5B6E82;--chip:#E6F0FA;--link:#0D4F8B;--red:#B3261E;--ok:#15803D;--offer:#FFF1E2;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#08131F;--card:#10202F;--line:#22374B;--ink:#EAF2FA;--mute:#93A8BC;--chip:#173249;--link:#6DB3F0;--red:#FF8A80;--ok:#4ADE80;--offer:#2A1B0B}}
+:root[data-theme="dark"]{--bg:#08131F;--card:#10202F;--line:#22374B;--ink:#EAF2FA;--mute:#93A8BC;--chip:#173249;--link:#6DB3F0;--red:#FF8A80;--ok:#4ADE80;--offer:#2A1B0B}
+html{color-scheme:light dark;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Readex Pro",Tahoma,"Segoe UI",sans-serif;line-height:1.6}
+button,input{font:inherit}
+:focus-visible{outline:3px solid var(--orange);outline-offset:2px}
+.card{background:var(--card);border-radius:14px;box-shadow:0 1px 8px rgba(10,37,64,.08)}
+.tab{padding:10px 16px;border-bottom:3px solid transparent;color:var(--mute);white-space:nowrap;background:none;border-top:0;border-inline:0}
+.tab[aria-selected=true]{border-bottom-color:var(--orange);color:var(--ink);font-weight:700}
+.cnt{background:var(--orange);color:#1A0E00;border-radius:99px;min-width:22px;padding:0 6px;text-align:center;font-weight:700;font-size:13px}
+.ib{background:none;border:1px solid rgba(255,255,255,.35);color:#fff;border-radius:10px;padding:8px 12px;font-size:14px;display:flex;gap:6px;align-items:center}
+.th{aspect-ratio:1;border-radius:10px;border:3px solid transparent;display:grid;place-items:center;font-size:clamp(28px,8vw,44px);cursor:pointer;padding:0}
+.th[aria-pressed=true]{border-color:var(--navy)}
+.star{color:#E8890C}
+.pbar{height:8px;border-radius:99px;background:var(--line);overflow:hidden}
+.pbar i{display:block;height:100%;background:#E8890C}
+.tb{flex:1;text-align:center;border-radius:8px;padding:6px 0;background:rgba(255,122,0,.18);font-variant-numeric:tabular-nums}
+.tb b{display:block;font-size:22px;line-height:1.2}
+.tb span{font-size:12px;color:var(--mute)}
+.ck{display:inline-grid;place-items:center;width:24px;height:24px;border-radius:99px;background:var(--navy);color:#fff;font-size:13px;flex:none}
+.toast{position:fixed;bottom:calc(18px + env(safe-area-inset-bottom,0px));left:50%;transform:translateX(-50%) translateY(90px);background:var(--ink);color:var(--bg);padding:10px 18px;border-radius:99px;transition:transform .25s;z-index:60;font-size:14px}
+.toast.on{transform:translateX(-50%) translateY(0)}
+@media(prefers-reduced-motion:reduce){.toast{transition:none}}
+</style>
+</head>
+<body>
+<header class="sticky z-40 text-white" style="background:#0D4F8B;top:env(safe-area-inset-top,0px)">
+<div class="max-w-6xl mx-auto px-3 py-2 flex flex-wrap items-center gap-2">
+<a href="index.html" class="flex items-center gap-2 font-bold text-2xl" aria-label="LOQTA">
+<svg viewBox="0 0 40 40" class="w-9 h-9" aria-hidden="true"><rect x="2" y="9" width="36" height="26" rx="7" fill="#fff"/><path d="M13 9l2.5-4h9L27 9z" fill="#FF7A00"/><circle cx="20" cy="22" r="8" fill="#0D4F8B"/><circle cx="20" cy="22" r="3.5" fill="#FF7A00"/></svg>
+<span>لقطة</span></a>
+<form class="order-3 md:order-none w-full md:w-auto md:flex-1 flex rounded-lg overflow-hidden bg-white" onsubmit="return false" role="search">
+<input type="search" placeholder="ابحث عن منتجات، علامات تجارية، فئات…" aria-label="بحث" class="flex-1 min-w-0 px-3 py-3 text-[#0A2540] bg-white border-0">
+<button class="px-5 font-bold border-0" style="background:var(--orange);color:#1A0E00">بحث</button></form>
+<span class="flex-1 md:hidden"></span>
+<button class="ib">♡ <span class="hidden sm:inline">المفضلة</span></button>
+<button class="ib">حسابي</button>
+<button class="ib" aria-label="العربة">🛒 <span class="cnt" id="cnt">0</span></button>
+</div>
+<nav class="overflow-x-auto whitespace-nowrap text-sm" style="background:#0A3E6F" aria-label="الأقسام"><div class="max-w-6xl mx-auto px-1">
+<a class="inline-block px-3 py-2" href="index.html">الرئيسية</a><a class="inline-block px-3 py-2" href="index.html#cats">إكسسوارات موبايل</a><a class="inline-block px-3 py-2" href="index.html#cats">أحذية</a><a class="inline-block px-3 py-2 font-bold" href="index.html#cats">إلكترونيات</a><a class="inline-block px-3 py-2" href="index.html#cats">موضة</a><a class="inline-block px-3 py-2" href="index.html#cats">منزل ومطبخ</a><a class="inline-block px-3 py-2" href="index.html#cats">جمال وعناية</a><a class="inline-block px-3 py-2 font-bold" style="color:#FFB366" href="index.html#hot">عروض نار</a>
+</div></nav>
+</header>
+
+<main class="max-w-6xl mx-auto px-3 py-3">
+<section class="card p-4 grid gap-6 md:grid-cols-2">
+<!-- التفاصيل: يمين -->
+<div class="flex flex-col gap-3">
+<p class="text-sm m-0" style="color:var(--mute)"><a href="index.html" style="color:var(--link)">الإلكترونيات</a> › سماعات › سماعات لاسلكية › لقطة</p>
+<h1 class="text-xl md:text-2xl font-bold leading-snug m-0">سماعات أذن لاسلكية بلوتوث 5.3، عزل ضجيج نشط، 40 ساعة تشغيل، مقاومة للماء IPX5 (أسود)</h1>
+<div id="rate" class="flex items-center gap-2 text-sm flex-wrap"><span class="star" aria-label="4.6 من 5">★★★★<span style="opacity:.45">★</span></span><b>4.6</b><a href="#" data-go style="color:var(--link)">(1,245 تقييم)</a></div>
+<a id="qa" href="#" class="text-sm font-bold" style="color:var(--link)">157 سؤال تمت الإجابة عليه</a>
+<div><span id="disc" class="inline-block rounded-full px-4 py-1 font-bold text-lg" style="background:var(--orange);color:#1A0E00">خصم 50%</span></div>
+<div class="flex items-end justify-between gap-3 flex-wrap">
+<div><div class="text-4xl font-bold" style="color:var(--ink)" id="price"></div><div class="text-sm" style="color:var(--mute)">السعر قبل الخصم: <s id="old"></s></div></div>
+<div class="font-bold" style="color:var(--ok)" id="save"></div></div>
+<div class="rounded-xl p-3" style="background:var(--offer);border:2px solid var(--orange)">
+<div class="text-center font-bold mb-2" style="color:#C25A00">ينتهي العرض بعد</div>
+<div class="flex gap-2 items-center" dir="rtl"><div class="tb"><b id="th">00</b><span>ساعات</span></div><b>:</b><div class="tb"><b id="tm">00</b><span>دقائق</span></div><b>:</b><div class="tb"><b id="ts">00</b><span>ثواني</span></div></div></div>
+<p class="m-0 flex items-start gap-2 font-bold"><span class="ck" style="background:var(--ok)">✓</span><span>التوصيل مجاني، يصل خلال 2-3 أيام لكل محافظات مصر<br><a href="#" class="text-sm font-normal" style="color:var(--link)">تفاصيل التوصيل</a></span></p>
+<p id="stk" class="font-bold m-0" style="color:var(--red)">● باقي 3 قطع فقط، اطلب قبل ما تخلص</p>
+<div class="flex items-center gap-3"><span>الكمية:</span>
+<div class="flex items-center rounded-lg overflow-hidden" style="border:1px solid var(--line)">
+<button id="minus" class="w-10 h-10 text-xl bg-transparent border-0" style="color:var(--ink)" aria-label="أقل">−</button><span id="qty" class="w-10 text-center font-bold">1</span><button id="plus" class="w-10 h-10 text-xl bg-transparent border-0" style="color:var(--ink)" aria-label="أكثر">+</button></div></div>
+<div class="grid gap-2 sm:grid-cols-2">
+<button id="add" class="w-full rounded-xl py-3.5 text-lg font-bold border-0" style="background:var(--orange);color:#1A0E00">🛒 أضف إلى العربة</button>
+<a id="wa" target="_blank" rel="noopener" class="w-full rounded-xl py-3.5 text-lg font-bold text-center block" style="background:#4ADE80;color:#052E16">💬 اشتر الآن عبر واتساب</a></div>
+</div>
+
+<!-- المعرض والبائع: شمال -->
+<div class="order-first md:order-last flex flex-col gap-4">
+<button id="main" class="rounded-xl aspect-[4/3] w-full grid place-items-center border-0 relative" aria-label="تكبير الصورة" style="font-size:clamp(100px,26vw,190px)"><span id="mainimg"></span><span class="absolute bottom-2 start-3 text-xs px-2 rounded" style="background:rgba(10,37,64,.75);color:#fff">اضغط للتكبير 🔍</span></button>
+<div class="grid grid-cols-4 gap-2" id="thumbs"></div>
+<div class="rounded-xl p-4" style="border:2px solid var(--navy)">
+<h2 class="m-0 mb-2 text-lg font-bold" style="color:var(--link)">معلومات البائع</h2>
+<p class="m-0 font-bold"><span class="ck">✓</span> البائع: متجر الإسكندراني الرسمي، متجر موثوق</p>
+<p id="srate" class="m-0 text-sm">تقييم البائع: 98.5% إيجابي (12,340 تقييم)</p>
+<p class="m-0 text-sm">ضمان: 12 شهر ضمان لقطة</p>
+<a href="#" class="text-sm font-bold" style="color:var(--link)">زيارة المتجر</a></div>
+</div>
+</section>
+
+<section id="feat" class="card mt-3 p-4">
+<h2 class="m-0 mb-3 text-lg font-bold">المميزات الرئيسية:</h2>
+<div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-4 font-medium">
+<div class="flex items-center gap-2"><span class="ck">✓</span>اتصال بلوتوث 5.3 سريع ومستقر</div>
+<div class="flex items-center gap-2"><span class="ck">✓</span>مقاومة الماء والعرق IPX5</div>
+<div class="flex items-center gap-2"><span class="ck">✓</span>بطارية تدوم 40 ساعة مع العلبة</div>
+<div class="flex items-center gap-2"><span class="ck">✓</span>عزل ضجيج نشط ANC</div></div>
+</section>
+
+<section class="card mt-3">
+<div role="tablist" class="flex overflow-x-auto" style="border-bottom:1px solid var(--line)">
+<button role="tab" class="tab" data-t="desc" aria-selected="true">الوصف</button>
+<button role="tab" class="tab" data-t="specs" aria-selected="false">المواصفات</button>
+<button role="tab" class="tab" data-t="reviews" aria-selected="false">التقييمات والآراء</button>
+<button role="tab" class="tab" data-t="similar" aria-selected="false">منتجات مشابهة</button></div>
+<div class="p-4">
+<div id="p-desc" role="tabpanel"><p id="pdesc" class="max-w-prose m-0">سماعات أذن لاسلكية بصوت نضيف وباس قوي، وعزل ضجيج نشط بيفصلك عن دوشة الشارع والمواصلات. بتتوصل بالموبايل بمجرد فتح العلبة، والبطارية تكمل 40 ساعة مع العلبة. مقاومة للعرق والرشح بمعيار IPX5 فتقدر تلبسها في الجيم.</p>
+<ul id="pul" class="list-disc ps-6 mt-3 max-w-prose"><li>بلوتوث 5.3 اتصال ثابت وسريع</li><li>ميكروفون واضح للمكالمات</li><li>تحكم باللمس في الأغنية والمكالمة</li><li>لون أسود، ضمان 12 شهر من البائع</li></ul></div>
+<div id="p-specs" role="tabpanel" hidden><table class="w-full max-w-xl text-sm"><tbody id="spec"></tbody></table></div>
+<div id="p-reviews" role="tabpanel" hidden><div class="grid gap-5 md:grid-cols-[220px_1fr]">
+<div><div class="text-4xl font-bold">4.6</div><div class="star">★★★★<span style="opacity:.45">★</span></div><div class="text-sm mb-3" style="color:var(--mute)">1,245 تقييم</div><div class="grid gap-1.5 text-sm" id="bars"></div></div>
+<div class="grid gap-3" id="revs"></div></div></div>
+<div id="p-similar" role="tabpanel" hidden><div class="grid grid-cols-2 md:grid-cols-4 gap-3" id="sim"></div></div>
+</div></section>
+</main>
+<footer class="mt-8 py-6 text-sm text-white" style="background:#0A3E6F"><div class="max-w-6xl mx-auto px-3 flex flex-wrap justify-between gap-2"><span><b>لقطة LOQTA</b> · إسكندرية، مصر</span><span>الدفع: عند الاستلام · Paymob · Fawry</span></div></footer>
+
+<div id="zoom" class="fixed inset-0 z-50 hidden place-items-center p-4" style="background:rgba(5,15,25,.88)" role="dialog" aria-label="عرض الصورة">
+<button id="zx" class="absolute top-4 end-4 text-white text-3xl w-11 h-11 bg-transparent border-0" aria-label="إغلاق">✕</button>
+<div id="zimg" class="rounded-2xl grid place-items-center w-full max-w-xl aspect-square" style="font-size:clamp(120px,40vw,260px)"></div></div>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+var $=function(s){return document.querySelector(s)},PRICE=99,OLD=199,STOCK=3,WA="201018881501",qty=1,n=0,cur=0,PNAME="سماعات أذن لاسلكية بلوتوث 5.3 أسود IPX5";
+function formatPrice(price){return price+' جنيه';}
+var imgs=[["🎧","#D9D3CB"],["🎵","#CFD8DC"],["🔋","#D6DDD3"],["📦","#DCD3D6"]];
+$("#price").textContent=formatPrice(PRICE);$("#old").textContent=formatPrice(OLD);
+$("#save").textContent="وفرت "+formatPrice(OLD-PRICE)+" ("+Math.round((1-PRICE/OLD)*100)+"%)";
+function show(i){cur=i;$("#main").style.background=imgs[i][1];$("#mainimg").innerHTML=imgs[i][0];document.querySelectorAll(".th").forEach(function(t,k){t.setAttribute("aria-pressed",k==i)})}
+imgs.forEach(function(g,i){var b=document.createElement("button");b.className="th";b.style.background=g[1];b.innerHTML=g[0];b.setAttribute("aria-label","صورة "+(i+1));b.onclick=function(){show(i)};$("#thumbs").appendChild(b)});show(0);
+$("#main").onclick=function(){var z=$("#zoom");$("#zimg").style.background=imgs[cur][1];$("#zimg").innerHTML=imgs[cur][0];z.classList.remove("hidden");z.classList.add("grid");$("#zx").focus()};
+function cz(){var z=$("#zoom");z.classList.add("hidden");z.classList.remove("grid")}
+$("#zx").onclick=cz;$("#zoom").onclick=function(e){if(e.target.id=="zoom")cz()};document.addEventListener("keydown",function(e){if(e.key=="Escape")cz()});
+function toast(t){var o=$("#toast");o.textContent=t;o.classList.add("on");clearTimeout(o._h);o._h=setTimeout(function(){o.classList.remove("on")},1600)}
+function wa(){$("#wa").href="https://wa.me/"+WA+"?text="+encodeURIComponent("أهلاً، عايز أطلب "+qty+" × "+PNAME+" بسعر "+formatPrice(PRICE*qty)+" من لقطة. "+location.href)}
+wa();
+$("#plus").onclick=function(){if(qty<STOCK)qty++;else toast("المتاح "+STOCK+" قطع فقط");$("#qty").textContent=qty;wa()};
+$("#minus").onclick=function(){if(qty>1)qty--;$("#qty").textContent=qty;wa()};
+$("#add").onclick=function(){n+=qty;$("#cnt").textContent=n;toast("اتضافت للعربة ✓")};
+function tabs(t){document.querySelectorAll(".tab").forEach(function(b){b.setAttribute("aria-selected",b.dataset.t==t)});["desc","specs","reviews","similar"].forEach(function(k){$("#p-"+k).hidden=k!=t})}
+document.querySelectorAll(".tab").forEach(function(b){b.onclick=function(){tabs(b.dataset.t)}});
+document.querySelector("[data-go]").onclick=function(e){e.preventDefault();tabs("reviews");$("[role=tablist]").scrollIntoView({behavior:"smooth"})};
+[["الاتصال","بلوتوث 5.3"],["اللون","أسود"],["مدة التشغيل","40 ساعة مع العلبة"],["عزل الضجيج","نشط ANC"],["مقاومة الماء","IPX5"],["الشحن","Type-C"],["التوافق","أندرويد و iOS"],["في العلبة","سماعتين، علبة شحن، كابل، دليل"]].forEach(function(r){$("#spec").insertAdjacentHTML("beforeend",'<tr style="border-bottom:1px solid var(--line)"><th class="text-start font-medium py-2 pe-3 w-2/5" style="color:var(--mute)">'+r[0]+'</th><td class="py-2">'+r[1]+'</td></tr>')});
+[[5,64],[4,24],[3,7],[2,3],[1,2]].forEach(function(r){$("#bars").insertAdjacentHTML("beforeend",'<div class="flex items-center gap-2"><span class="w-10">'+r[0]+' ★</span><div class="pbar flex-1"><i style="width:'+r[1]+'%"></i></div><span class="w-9 text-end">'+r[1]+'%</span></div>')});
+[["محمد س.",5,"الصوت نضيف جداً بالنسبة للسعر، والعلبة بتشحنها أكتر من مرة.","من 3 أيام"],["نورهان ع.",4,"خفيفة ومريحة في الودن. عزل الضجيج كويس في المواصلات.","من أسبوع"],["كريم أ.",5,"وصلتني في إسكندرية تاني يوم، والبائع رد على واتساب فوراً.","من أسبوعين"]].forEach(function(r){$("#revs").insertAdjacentHTML("beforeend",'<article class="p-3 rounded-xl" style="background:var(--chip)"><div class="flex justify-between text-sm"><b>'+r[0]+' <span class="star">'+"★".repeat(r[1])+'</span></b><span style="color:var(--mute)">'+r[3]+'</span></div><p class="m-0 mt-1">'+r[2]+'</p><div class="text-xs mt-1" style="color:var(--ok)">✓ مشتري موثّق</div></article>')});
+[["🎧","#E3F4E8","سماعة بلوتوث أذن",129,229],["🔋","#EEE6F8","باور بانك 10000",349,550],["📱","#FFE9D2","جراب إيربودز سيليكون",35,69],["🔌","#DCEBFA","كابل شحن Type-C",39,79]].forEach(function(p){$("#sim").insertAdjacentHTML("beforeend",'<a href="#" class="rounded-xl overflow-hidden block" style="border:1px solid var(--line);color:inherit;text-decoration:none"><div class="grid place-items-center h-24 text-5xl" style="background:'+p[1]+'" aria-hidden="true">'+p[0]+'</div><div class="p-2.5"><div class="text-sm">'+p[2]+'</div><b>'+formatPrice(p[3])+'</b> <s class="text-xs" style="color:var(--mute)">'+formatPrice(p[4])+'</s></div></a>')});
+function tick(){var x=new Date(),e=new Date(x);e.setHours(24,0,0,0);var s=Math.floor((e-x)/1000),f=function(v){return String(v).padStart(2,"0")};$("#th").textContent=f(Math.floor(s/3600));$("#tm").textContent=f(Math.floor(s%3600/60));$("#ts").textContent=f(s%60)}
+function E(t){return String(t==null?"":t).replace(/[&<>"']/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]})}
+function loadProduct(){var id=new URLSearchParams(location.search).get("id");if(!id||!window.LQ)return;
+LQ.list("products","select=*,categories(name_ar,icon)&id=eq."+encodeURIComponent(id)).then(function(rows){
+var r=(rows||[]).filter(function(x){return String(x.id)==id})[0];
+if(!r){$("h1").textContent="المنتج ده مش موجود أو اتشال";$("#add").disabled=true;$("#wa").style.display="none";return}
+PNAME=r.name;PRICE=+r.price_after;OLD=+r.price_before;STOCK=r.stock;qty=1;$("#qty").textContent=1;wa();
+var pc=Math.round((1-PRICE/OLD)*100),ic=r.categories&&r.categories.icon||"🛍️",cn=r.categories?r.categories.name_ar:"";
+document.title=r.name+" | لقطة LOQTA";$("h1").textContent=r.name;
+$("#price").textContent=formatPrice(PRICE);$("#old").textContent=formatPrice(OLD);$("#save").textContent="وفرت "+formatPrice(OLD-PRICE)+" ("+pc+"%)";$("#disc").textContent="خصم "+pc+"%";
+$("#stk").textContent=STOCK<=0?"● نفد من المخزون":STOCK<=5?"● باقي "+STOCK+" قطع فقط، اطلب قبل ما تخلص":"● متوفر";$("#stk").style.color=STOCK<=5?"var(--red)":"var(--ok)";
+if(STOCK<=0){$("#add").disabled=true;$("#wa").style.display="none"}
+var ims=(r.images||[]).map(function(u){return['<img src="'+E(u)+'" alt="" style="width:100%;height:100%;object-fit:cover;border-radius:inherit">',"#EEF2F6"]});
+imgs=ims.length?ims:[[ic,"#E6F0FA"]];$("#thumbs").innerHTML="";
+imgs.forEach(function(g,i){var b=document.createElement("button");b.className="th";b.style.background=g[1];b.innerHTML=g[0];b.setAttribute("aria-label","صورة "+(i+1));b.onclick=function(){show(i)};$("#thumbs").appendChild(b)});
+$("#mainimg").style.cssText=ims.length?"display:block;width:100%;height:100%":"";show(0);
+$("#pdesc").textContent=r.description||"";$("#pdesc").hidden=!r.description;$("#pul").hidden=true;
+$("#spec").innerHTML='<tr style="border-bottom:1px solid var(--line)"><th class="text-start font-medium py-2 pe-3 w-2/5" style="color:var(--mute)">القسم</th><td class="py-2">'+E(cn)+'</td></tr><tr><th class="text-start font-medium py-2 pe-3" style="color:var(--mute)">التوفر</th><td class="py-2">'+(STOCK>0?"متوفر":"نفد")+'</td></tr>';
+["#rate","#qa","#feat","#srate"].forEach(function(s){$(s).hidden=true});
+document.querySelector('[data-t=reviews]').hidden=true;tabs("desc");
+}).catch(function(){});
+LQ.list("products","select=*,categories(name_ar,icon)&status=eq.active&order=created_at.desc&limit=5").then(function(s){s=(s||[]).filter(function(x){return x.status=="active"&&String(x.id)!=id}).slice(0,4);
+$("#sim").innerHTML=s.length?s.map(function(x){var u=x.images&&x.images[0],ic=x.categories&&x.categories.icon||"🛍️";return '<a href="product.html?id='+encodeURIComponent(x.id)+'" class="rounded-xl overflow-hidden block" style="border:1px solid var(--line);color:inherit;text-decoration:none"><div class="grid place-items-center h-24 text-5xl overflow-hidden" style="background:var(--chip)" aria-hidden="true">'+(u?'<img src="'+E(u)+'" alt="" style="width:100%;height:100%;object-fit:cover">':ic)+'</div><div class="p-2.5"><div class="text-sm">'+E(x.name)+'</div><b>'+formatPrice(+x.price_after)+'</b> <s class="text-xs" style="color:var(--mute)">'+formatPrice(+x.price_before)+'</s></div></a>'}).join(""):'<p class="m-0" style="color:var(--mute)">مفيش منتجات مشابهة لسه.</p>'}).catch(function(){})}
+tick();setInterval(tick,1000);loadProduct();
+</script>
+</body>
+</html>
