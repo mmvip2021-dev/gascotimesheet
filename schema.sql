@@ -55,3 +55,7 @@ create policy att_cp_sel on public.attendance_checkpoints for select to authenti
 --    الدوال: att_share_add / att_share_remove / att_share_list
 -- 6) دالة التذكير: supabase/functions/att-reminders/index.ts (منشورة، Verify JWT = OFF، تتحقق بسر x-cron-secret)
 --    والجدولة: انظر cron.sql
+-- 7) نطاق وصلاحيات المشاهدين (migration 07_viewer_scope_permissions) — مطبّقة بالفعل:
+--    أعمدة att_members: depts, emps, perms
+--    القراءة للمشاهد عبر الدالة att_view_docs() فقط (ترشيح بالقسم/الأشخاص وإخفاء الإضافي)
+--    الدوال: att_share_set, att_share_list (الجديدة)
