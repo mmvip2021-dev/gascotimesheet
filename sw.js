@@ -1,5 +1,5 @@
 // Service Worker: يعمل التطبيق بدون إنترنت. بيانات Supabase لا تُخزَّن هنا أبدًا.
-const V = 'att-v2';
+const V = 'att-v3';
 const SHELL = ['./', 'index.html', 'config.js', 'manifest.webmanifest', 'icon-192.png', 'icon-512.png', 'apple-touch-icon.png'];
 
 self.addEventListener('install', (e) => {
@@ -39,4 +39,25 @@ self.addEventListener('fetch', (e) => {
       })
     );
   }
+});
+
+// إشعارات التذكير (Web Push)
+self.addEventListener('push', (e) => {
+  let d = {};
+  try { d = e.data ? e.data.json() : {}; } catch (_) { /* ignore */ }
+  e.waitUntil(self.registration.showNotification(d.title || '⏰ تذكير الحضور', {
+    body: d.body || 'سجّل حضور اليوم',
+    icon: 'icon-192.png', badge: 'icon-192.png', tag: 'att-reminder', dir: 'rtl', lang: 'ar',
+    data: { url: d.url || './' }
+  }));
+});
+
+self.addEventListener('notificationclick', (e) => {
+  e.notification.close();
+  e.waitUntil(
+    self.clients.matchAll({ type: 'window', includeUncontrolled: true }).then((cs) => {
+      for (const c of cs) { if ('focus' in c) return c.focus(); }
+      return self.clients.openWindow((e.notification.data && e.notification.data.url) || './');
+    })
+  );
 });

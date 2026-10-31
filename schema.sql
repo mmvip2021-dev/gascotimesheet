@@ -49,3 +49,9 @@ create policy att_cp_sel on public.attendance_checkpoints for select to authenti
 -- 4) الدوال والتريجر (att_docs_history, att_make_checkpoint, att_restore_checkpoint)
 -- مطبّقة على المشروع في الـ migration رقم 05_attendance_history_checkpoints.
 -- راجعها من: Supabase ← Database ← Migrations.
+
+-- 5) المشاهدة فقط، سجل النشاط، التذكير (migration 06_attendance_roles_log_push) — مطبّقة بالفعل.
+--    الجداول: att_members, attendance_log, att_push_subs, push_config
+--    الدوال: att_share_add / att_share_remove / att_share_list
+-- 6) دالة التذكير: supabase/functions/att-reminders/index.ts (منشورة، Verify JWT = OFF، تتحقق بسر x-cron-secret)
+--    والجدولة: انظر cron.sql
